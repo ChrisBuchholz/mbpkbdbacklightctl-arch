@@ -11,7 +11,7 @@ CC=g++
 CFLAGS=('-Wall -lXss')
 source=(http://gitorious.org/mactel/mbpkbdbacklight/blobs/raw/master/src/mbpkbdbacklightctl.cpp
         mbpkbdbacklightctl.rc)
-md5sums=('f604c9166d709bed81e71ef0c0b83980'
+md5sums=('64abc81c09183a357cb4a478962c4f33'
          'd202e5d2f548d8f005d1c37f026b64dc')
 
 build() {
