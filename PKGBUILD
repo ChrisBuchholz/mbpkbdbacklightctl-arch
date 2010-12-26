@@ -1,7 +1,7 @@
 # Maintainer: Chris Buchholz <christoffer.buchholz [at] gmail [dot] com>
 
-pkgname=mbpkbdbacklight
-pkgver=0.3
+pkgname=mbpkbdbacklightctl
+pkgver=0.3.1
 pkgrel=1
 pkgdesc="Automatically adjust keyboard backlight on MacBook Pro"
 arch=('i686' 'x86_64')
@@ -9,17 +9,17 @@ depends=('libxss')
 license=('GPL3')
 CC=g++
 CFLAGS=('-Wall -lXss')
-source=(http://gitorious.org/mactel/mbpkbdbacklight/blobs/raw/master/src/mbpkbdbacklight.cpp
-        mbpkbdbacklight.rc)
-md5sums=('38fc10d600f50d195098fde95da56728'
-         'e8e3b34be3d6418d672248078c83f6e3')
+source=(http://gitorious.org/mactel/mbpkbdbacklight/blobs/raw/master/src/mbpkbdbacklightctl.cpp
+        mbpkbdbacklightctl.rc)
+md5sums=('f604c9166d709bed81e71ef0c0b83980'
+         'd202e5d2f548d8f005d1c37f026b64dc')
 
 build() {
     cd $srcdir/
-    $CC $CFLAGS mbpkbdbacklight.cpp -o mbpkbdbacklight
+    $CC $CFLAGS mbpkbdbacklightctl.cpp -o mbpkbdbacklightctl
 }
 
 package() {
-    install -Dm755 $srcdir/mbpkbdbacklight $pkgdir/usr/bin/mbpkbdbacklight
-    install -Dm755 $srcdir/mbpkbdbacklight.rc $pkgdir/etc/rc.d/mbpkbdbacklight
+    install -Dm755 $srcdir/mbpkbdbacklightctl $pkgdir/usr/bin/mbpkbdbacklightctl
+    install -Dm755 $srcdir/mbpkbdbacklightctl.rc $pkgdir/etc/rc.d/mbpkbdbacklightctl
 }
