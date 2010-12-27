@@ -29,7 +29,7 @@ CC=g++
 CFLAGS=('-Wall -lXss')
 source=(http://gitorious.org/mactel/mbpkbdbacklightctl/blobs/raw/master/src/mbpkbdbacklightctl.cpp
         mbpkbdbacklightctl.rc)
-md5sums=('dfb3aa26a257590b2e784c8fb0734a72'
+md5sums=('4325956b9213fa32b1fe189ca5a0c101'
          '55e7d1c4d09557fad70acd8656cebd79')
 
 build() {
