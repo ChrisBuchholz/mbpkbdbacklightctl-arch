@@ -1,7 +1,7 @@
-# Maintainer: Chris Buchholz <christoffer.buchholz@gmail.com>
+# Maintainer: chrisbuchholz <christoffer.buchholz@gmail.com>
 #
 # mbpkbdbacklightctl - control keyboard backlight for MacBook Pro
-# Copyright (C) 2010  Chris Buchholz <christoffer.buchholz@gmail.com>
+# Copyright (C) 2010  chrisbuchholz <http://chrisbuchholz.me/>
 #
 # This file is part of mbpkbdbacklightctl
 #
@@ -27,10 +27,10 @@ depends=('libxss')
 license=('GPL3')
 CC=g++
 CFLAGS=('-Wall -lXss')
-source=(http://gitorious.org/mactel/mbpkbdbacklightctl/blobs/raw/master/src/mbpkbdbacklightctl.cpp
+source=(https://raw.github.com/ChrisBuchholz/mbpkbdbacklightctl/master/src/mbpkbdbacklightctl.cpp
         mbpkbdbacklightctl.rc)
-md5sums=('4325956b9213fa32b1fe189ca5a0c101'
-         '55e7d1c4d09557fad70acd8656cebd79')
+md5sums=('9727914082a8b6611ec6e216ae9d366a'
+         'ed0cc5dc5bf48373c1d1ec142b8fd8b2')
 
 build() {
     cd $srcdir/
