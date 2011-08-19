@@ -27,14 +27,14 @@ depends=('libxss')
 license=('GPL3')
 CC=g++
 CFLAGS=('-Wall -lXss')
-source=(https://raw.github.com/ChrisBuchholz/mbpkbdbacklightctl/master/src/mbpkbdbacklightctl.cpp
+source=(https://raw.github.com/ChrisBuchholz/mbpkbdbacklightctl/bf9e230f6f17862b3a31fffec0e5e4c7620caaa4/src/mbpkbdbacklightctl.cc
         mbpkbdbacklightctl.rc)
 md5sums=('9727914082a8b6611ec6e216ae9d366a'
          'ed0cc5dc5bf48373c1d1ec142b8fd8b2')
 
 build() {
     cd $srcdir/
-    $CC $CFLAGS mbpkbdbacklightctl.cpp -o mbpkbdbacklightctl
+    $CC $CFLAGS mbpkbdbacklightctl.cc -o mbpkbdbacklightctl
 }
 
 package() {
